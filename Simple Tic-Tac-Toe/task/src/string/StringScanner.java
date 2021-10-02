@@ -3,7 +3,7 @@ package string;
 import java.util.Scanner;
 
 public class StringScanner {
-    private StringController stringController = new StringController();
+    private final StringController stringController = new StringController();
 
     public String getString() {
         Scanner scanner = new Scanner(System.in);

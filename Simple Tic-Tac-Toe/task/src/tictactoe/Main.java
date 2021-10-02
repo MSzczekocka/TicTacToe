@@ -1,17 +1,17 @@
 package tictactoe;
 
-import string.StringScanner;
+import string.StringSetter;
+
+import java.util.List;
 
 public class Main {
-    private static final StringScanner stringScanner = new StringScanner();
+    private static final StringSetter stringSetter = new StringSetter();
 
     public static void main(String[] args) {
-        String result = stringScanner.getString();
+        List<String> results = stringSetter.setString();
 
         System.out.println("---------");
-        System.out.println("| " + result.charAt(0) + " " + result.charAt(1) + " " + result.charAt(2) + " |");
-        System.out.println("| " + result.charAt(3) + " " + result.charAt(4) + " " + result.charAt(5) + " |");
-        System.out.println("| " + result.charAt(6) + " " + result.charAt(7) + " " + result.charAt(8) + " |");
+        results.forEach(result -> System.out.println("| "+ result+ "|"));
         System.out.println("---------");
     }
 

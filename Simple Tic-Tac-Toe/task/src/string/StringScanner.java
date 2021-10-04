@@ -1,7 +1,5 @@
 package string;
 
-import gameAnalyzer.StringController;
-
 import java.util.Scanner;
 
 public class StringScanner {

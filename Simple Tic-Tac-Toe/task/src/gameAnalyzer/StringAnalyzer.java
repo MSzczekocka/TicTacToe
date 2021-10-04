@@ -7,15 +7,15 @@ public class StringAnalyzer {
     private  final StringSetter stringSetter = new StringSetter();
     private final WinningState winningState = new WinningState();
 
-    public String getGameState(){
+    public void getGameState(){
         if (!impossibleState.isPossible()){
-            return "Impossible";
+            System.out.println("Impossible");
         }else if (!winningState.sbWon().equals("")){
-            return winningState.sbWon();
+            System.out.println(winningState.sbWon());
         }else if (stringSetter.getResult().indexOf('_')==-1){
-            return "Draw";
+            System.out.println("Draw");
         } else {
-            return "Game not finished";
+            System.out.println("Game not finished");
         }
     }
 }

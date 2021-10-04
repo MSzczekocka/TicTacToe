@@ -16,7 +16,6 @@ public class Main {
         results.forEach(result -> System.out.println("| "+ result+ "|"));
         System.out.println("---------");
 
-        System.out.println(stringAnalyzer.getGameState());
     }
 
 }

@@ -1,20 +1,18 @@
 package gameAnalyzer;
 
-import string.StringSetter;
-
 public class StringAnalyzer {
     private final ImpossibleState impossibleState = new ImpossibleState();
-    private  final StringSetter stringSetter = new StringSetter();
     private final WinningState winningState = new WinningState();
 
-    public void getGameState(){
-        if (!impossibleState.isPossible()){
+    public void getGameState( String result){
+        String winStatement = winningState.sbWon(result);
+        if (!impossibleState.isPossible(result, winStatement)){
             System.out.println("Impossible");
-        }else if (!winningState.sbWon().equals("")){
-            System.out.println(winningState.sbWon());
-        }else if (stringSetter.getResult().indexOf('_')==-1){
+        }else if (!winStatement.equals("")){
+            System.out.println(winStatement);
+        }else if (result.indexOf('_')==-1){
             System.out.println("Draw");
-        } else {
+        }else{
             System.out.println("Game not finished");
         }
     }

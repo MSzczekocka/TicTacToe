@@ -1,4 +1,4 @@
-package string;
+package gameAnalyzer;
 
 public class StringController {
 

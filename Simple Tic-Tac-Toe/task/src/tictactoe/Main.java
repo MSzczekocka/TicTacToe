@@ -1,9 +1,7 @@
 package tictactoe;
 
-import gameAnalyzer.StringAnalyzer;
+import stringAnalyzer.StringAnalyzer;
 import string.StringScanner;
-
-import java.util.List;
 
 public class Main {
     private static final StringScanner stringScanner = new StringScanner();

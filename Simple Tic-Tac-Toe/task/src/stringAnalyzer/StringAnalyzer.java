@@ -1,4 +1,4 @@
-package gameAnalyzer;
+package stringAnalyzer;
 
 public class StringAnalyzer {
     private final ImpossibleState impossibleState = new ImpossibleState();

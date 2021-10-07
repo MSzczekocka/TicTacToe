@@ -8,10 +8,8 @@ public class StringAnalyzer {
 //        if (!impossibleState.isPossible(result, winStatement)){
 //            System.out.println("Impossible");
         if (!winStatement.equals("")) {
-            System.out.println(winStatement);
             return winStatement;
         } else if (result.indexOf('_') == -1) {
-            System.out.println("Draw");
             return "Draw";
         } else {
             System.out.println("Game not finished");

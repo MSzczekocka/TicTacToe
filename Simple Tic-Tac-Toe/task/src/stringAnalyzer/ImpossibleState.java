@@ -1,4 +1,4 @@
-package gameAnalyzer;
+package stringAnalyzer;
 
 public class ImpossibleState {
     int X, O = 0;

@@ -1,25 +1,24 @@
 package tictactoe;
 
-import gameAnalyzer.StringAnalyzer;
-import string.StringScanner;
-
-import java.util.List;
+import display.MovementDisplay;
+import move.MovementGetter;
+import stringAnalyzer.StringAnalyzer;
 
 public class Main {
-    private static final StringScanner stringScanner = new StringScanner();
+    // konstruktor dla new xxx
     private static final StringAnalyzer stringAnalyzer = new StringAnalyzer();
+    private static final MovementGetter movementGetter = new MovementGetter();
+    private static final MovementDisplay movementDisplay = new MovementDisplay();
 
     public static void main(String[] args) {
-        String result = stringScanner.getString();
-        String resultWithSpaces = result.replaceAll(".","$0 ");
-
-        System.out.println("---------");
-        System.out.println("| " + resultWithSpaces.substring(0,6) +"|");
-        System.out.println("| " + resultWithSpaces.substring(6,12) +"|");
-        System.out.println("| " + resultWithSpaces.substring(12,18) +"|");
-        System.out.println("---------");
-
-        stringAnalyzer.getGameState(result);
+        String result = "_________";
+        movementDisplay.displayMovement(result);
+//        stringAnalyzer.getGameState(result);
+        String moveResult = movementGetter.getMove(result);
+        do {
+            movementDisplay.displayMovement(moveResult);
+            moveResult = movementGetter.getMove(moveResult);
+        } while (stringAnalyzer.getGameState(moveResult).equals("Game not finished"));
     }
 
 }

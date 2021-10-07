@@ -1,4 +1,4 @@
-package gameAnalyzer;
+package stringAnalyzer;
 
 import java.util.ArrayList;
 import java.util.List;

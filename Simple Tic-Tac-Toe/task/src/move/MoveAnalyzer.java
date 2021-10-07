@@ -4,6 +4,7 @@ public class MoveAnalyzer {
     CoordinateController controller = new CoordinateController();
 
     public static String analyzeMove(String moveCoor, String result) {
+        OpponentAnalyzer opponentAnalyzer = new OpponentAnalyzer();
         CoordinateController controller = new CoordinateController();
         String moveWoSpaces = controller.withoutSpaces(moveCoor);
 
@@ -21,7 +22,7 @@ public class MoveAnalyzer {
         int positionInGrid = controller.gridPosition(coor1, coor2);
         if (result.charAt(positionInGrid) != '_') return "This cell is occupied! Choose another one!";
 
-        return result.substring(0, positionInGrid) + "X" + result.substring(positionInGrid + 1);
+        return result.substring(0, positionInGrid) + opponentAnalyzer.pickOpponent(result) + result.substring(positionInGrid + 1);
     }
 }
 

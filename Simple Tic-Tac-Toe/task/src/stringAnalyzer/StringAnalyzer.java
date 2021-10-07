@@ -5,8 +5,6 @@ public class StringAnalyzer {
 
     public String getGameState(String result) {
         String winStatement = winningState.sbWon(result);
-//        if (!impossibleState.isPossible(result, winStatement)){
-//            System.out.println("Impossible");
         if (!winStatement.equals("")) {
             return winStatement;
         } else if (result.indexOf('_') == -1) {

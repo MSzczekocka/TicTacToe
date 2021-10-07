@@ -16,10 +16,11 @@ public class MovementGetter {
         String analysisResult = MoveAnalyzer.analyzeMove(moveCoor, result);
         while (analysisResult.length()>9){
             System.out.println(analysisResult);
-            System.out.println("Put new string");
+            System.out.println("Put new coordinates");
             moveCoor = scanner.nextLine();
+            analysisResult = MoveAnalyzer.analyzeMove(moveCoor, result);
         };
-        return moveCoor;
+        return analysisResult;
     }
 
 

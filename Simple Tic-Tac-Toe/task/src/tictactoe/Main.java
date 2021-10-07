@@ -20,7 +20,8 @@ public class Main {
 
         startStringDisplay.displayInitGrid(resultWithSpaces);
 //        stringAnalyzer.getGameState(result);
-        movementDisplay.displayMovement(movementGetter.getMove(result));
+        String moveResult = movementGetter.getMove(result);
+        movementDisplay.displayMovement(moveResult);
     }
 
 }

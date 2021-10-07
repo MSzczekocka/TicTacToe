@@ -15,7 +15,6 @@ public class Main {
     public static void main(String[] args) {
         String result = "_________";
         movementDisplay.displayMovement(result);
-//        stringAnalyzer.getGameState(result);
         String moveResult = movementGetter.getMove(result);
         do {
             movementDisplay.displayMovement(moveResult);
@@ -25,7 +24,6 @@ public class Main {
         movementDisplay.displayMovement(moveResult);
         System.out.println(stringAnalyzer.getGameState(moveResult));
     }
-
 }
 
 

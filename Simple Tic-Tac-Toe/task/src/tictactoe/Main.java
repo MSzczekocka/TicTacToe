@@ -7,7 +7,8 @@ import stringAnalyzer.StringAnalyzer;
 public class Main {
     // konstruktor dla new xxx
     // bez spacji też działą
-    //pojedyncza liczba wywala
+    // pojedyncza liczba wywala
+    // 2x wins
     private static final StringAnalyzer stringAnalyzer = new StringAnalyzer();
     private static final MovementGetter movementGetter = new MovementGetter();
     private static final MovementDisplay movementDisplay = new MovementDisplay();
@@ -27,3 +28,4 @@ public class Main {
 }
 
 
+// solid, obiektowość, -> coś lepiej - > przenieś na nowy proj + testy

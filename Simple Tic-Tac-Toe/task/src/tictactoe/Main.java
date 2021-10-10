@@ -5,7 +5,8 @@ import move.MovementGetter;
 import stringAnalyzer.StringAnalyzer;
 
 public class Main {
-    // konstruktor dla new xxx
+    // konstru
+    // ktor dla new xxx
     // bez spacji też działą
     // pojedyncza liczba wywala
     // 2x wins

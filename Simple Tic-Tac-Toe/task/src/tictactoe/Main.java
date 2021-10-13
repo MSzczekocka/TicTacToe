@@ -9,7 +9,7 @@ public class Main {
     // ktor dla new xxx
     // bez spacji też działą
     // pojedyncza liczba wywala
-    // 2x wins\
+    // 2x wins\dd
     private static final StringAnalyzer stringAnalyzer = new StringAnalyzer();
     private static final MovementGetter movementGetter = new MovementGetter();
     private static final MovementDisplay movementDisplay = new MovementDisplay();

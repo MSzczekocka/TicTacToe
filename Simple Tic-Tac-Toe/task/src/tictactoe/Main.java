@@ -5,8 +5,6 @@ import move.MovementGetter;
 import stringAnalyzer.StringAnalyzer;
 
 public class Main {
-    // konstru
-    // ktor dla new xxx
     private static final StringAnalyzer stringAnalyzer = new StringAnalyzer();
     private static final MovementGetter movementGetter = new MovementGetter();
     private static final MovementDisplay movementDisplay = new MovementDisplay();
@@ -25,5 +23,3 @@ public class Main {
     }
 }
 
-
-// solid, obiektowość, -> coś lepiej - > przenieś na nowy proj + testy

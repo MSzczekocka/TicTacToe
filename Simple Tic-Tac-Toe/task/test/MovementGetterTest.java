@@ -9,7 +9,6 @@ public class MovementGetterTest {
 
     @Test
     public void getMove_startString_coordinatesOk_Test(){
-
         // given
         String startString = "_________";
         String moveCoor = "2 1";
@@ -26,7 +25,6 @@ public class MovementGetterTest {
 
     @Test
     public void getMove_gameplayString_coordinatesOk_Test(){
-
         // given
         String startString = "X________";
         String moveCoor = "2 1";

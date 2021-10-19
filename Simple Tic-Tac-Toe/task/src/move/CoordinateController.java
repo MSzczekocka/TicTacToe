@@ -7,7 +7,6 @@ public class CoordinateController {
     }
 
     public int getCoor1(String moveCoor) {
-
         return Character.getNumericValue(moveCoor.charAt(0));
     }
 
